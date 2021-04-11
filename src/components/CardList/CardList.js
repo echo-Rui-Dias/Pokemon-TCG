@@ -5,7 +5,7 @@ import CardListItem from "./CardListItem/CardListItem";
 function CardList({ cards }) {
   return cards.length > 0 ? (
     <ul>
-      {cards.forEach((card) => {
+      {cards.map((card) => {
         <li>
           {console.log(card.name)}Name: {card.name}
         </li>;
