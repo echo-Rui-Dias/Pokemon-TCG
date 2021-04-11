@@ -4,8 +4,10 @@ import PropTypes from "prop-types";
 function CardList({ cards }) {
   return cards.length > 0 ? (
     <ul>
-      {cards.map((card) => {
-        <li>{card}</li>;
+      {cards.forEach((card) => {
+        <li>
+          {console.log(card.name)}Name: {card.name}
+        </li>;
       })}
     </ul>
   ) : (
