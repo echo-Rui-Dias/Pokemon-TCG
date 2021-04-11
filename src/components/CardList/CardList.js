@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import CardListItem from "./CardListItem/CardListItem";
 
 function CardList({ cards }) {
   return cards.length > 0 ? (
@@ -8,6 +9,7 @@ function CardList({ cards }) {
         <li>
           {console.log(card.name)}Name: {card.name}
         </li>;
+        // <CardListItem card={card} />;
       })}
     </ul>
   ) : (
