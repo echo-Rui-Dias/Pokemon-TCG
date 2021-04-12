@@ -7,6 +7,10 @@
   overflow: hidden;
   padding-top: 10px;
 }
+.h2 {
+  margin: auto;
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   .card-list {

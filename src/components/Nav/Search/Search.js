@@ -11,7 +11,7 @@ export default function Search({ setCards }) {
     setCards([]);
     try {
       const { data } = await axios.get(
-        `https://api.pokemontcg.io/v2/cards?q=name:${searchTerm}`
+        `https://api.pokemontcg.io/v2/cards?orderBy=name&pageSize=50&q=name:${searchTerm}*`
       );
       setCards(data.data);
     } catch (error) {
@@ -23,7 +23,7 @@ export default function Search({ setCards }) {
     const getInititalCards = async () => {
       try {
         const { data } = await axios.get(
-          "https://api.pokemontcg.io/v2/cards?pageSize=50"
+          "https://api.pokemontcg.io/v2/cards?orderBy=name&pageSize=50"
         );
         setCards(data.data);
       } catch (error) {
@@ -37,7 +37,7 @@ export default function Search({ setCards }) {
       <div>
         <input
           className={styles.input}
-          type='text'
+          type='search'
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />

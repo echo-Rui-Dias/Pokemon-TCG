@@ -12,7 +12,7 @@ function CardList({ cards }) {
     </ul>
   ) : (
     <div>
-      <h2>No Results</h2>
+      <h2 className={styles["h2"]}>No Results</h2>
     </div>
   );
 }
