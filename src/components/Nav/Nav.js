@@ -5,11 +5,11 @@ import styles from "./Nav.module.css";
 export default function Nav({ setCards }) {
   return (
     <div className={styles.Nav}>
-      <a className={styles["link-nav"]} href='../../App.js'>
+      <a className={styles["link-nav"]} href='/'>
         <img className={styles["img-logo"]} src='images/logo.png' alt='teste' />
         <h1 className={styles["title"]}>Pokemon TCG APP</h1>
       </a>
-      <Search setCards={setCards} />
+      <Search className={styles.Search} setCards={setCards} />
     </div>
   );
 }

@@ -16,3 +16,6 @@
   outline: none;
   border: 1px solid gray;
 }
+
+@media (min-width: 768px) {
+}

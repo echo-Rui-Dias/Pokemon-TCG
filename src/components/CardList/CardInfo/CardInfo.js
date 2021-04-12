@@ -1,5 +1,4 @@
 import React from "react";
-
 import styles from "./CardInfo.module.css";
 
 export default function CardInfo({ card }) {
@@ -12,7 +11,7 @@ export default function CardInfo({ card }) {
   return (
     <div>
       <section className={styles["img-pokemon"]}>
-        <img src={card.images.large} alt={"image of " + card.name} />
+        <img src={card.images.small} alt={"image of " + card.name} />
       </section>
       <section className={styles["info-pokemon"]}>
         <div className={styles["title-pokemon"]}>
