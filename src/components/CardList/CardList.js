@@ -1,15 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import CardListItem from "./CardListItem/CardListItem";
+import styles from "./CardList.module.css";
 
 function CardList({ cards }) {
   return cards.length > 0 ? (
-    <ul>
+    <ul className={styles["card-list"]}>
       {cards.map((card) => {
-        <li>
-          {console.log(card.name)}Name: {card.name}
-        </li>;
-        // <CardListItem card={card} />;
+        return <CardListItem key={card.id} card={card} />;
       })}
     </ul>
   ) : (

@@ -1,0 +1,16 @@
+.card {
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.img-card {
+  width: 100%;
+}
+
+.link-card {
+  width: 100%;
+}
