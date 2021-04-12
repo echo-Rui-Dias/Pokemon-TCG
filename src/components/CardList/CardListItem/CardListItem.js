@@ -8,8 +8,7 @@ export default function CardListItem({ card }) {
   return (
     <li className={styles.card}>
       <Route path='/Card-info' render={() => <CardInfo card={card} />} />
-      <a className={styles["link-card"]} href='/Card-info'>
-        {/*target='_blank'*/}
+      <a className={styles["link-card"]} href='/Card-info' target='_blank'>
         <img
           className={styles["img-card"]}
           src={card.images.small}
