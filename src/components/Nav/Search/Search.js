@@ -36,6 +36,7 @@ export default function Search({ setCards }) {
     <form className={styles["form-search"]} onSubmit={handleOnSubmit}>
       <div>
         <input
+          className={styles.input}
           type='text'
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
